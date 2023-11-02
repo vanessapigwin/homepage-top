@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: solid 1px red; */
+}
+
+:root {
+    --theme-black: #333333;
+    --theme-white: white;
+    --theme-teal: #51cbce;
+    --theme-red: #C52233;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--theme-teal)
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+    color: #333333
+}
+
+footer,
+header {
+    background-color: var(--theme-black);
+    color: var(--theme-white);
+    text-align: center;
+}
+
+header ul {
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 20px;
+}
+
+h1 {
+    font-family: 'Agbalumo','Courier New', Courier, monospace;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'Agbalumo','Courier New', Courier, monospace;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: 'Agbalumo','Courier New', Courier, monospace;
+    font-size: 1.5em;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+section {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px   
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+p {
+    padding-bottom: 10px 0;
+}
+
+
+a > img {
+    width: 100%;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.card {
+    .img-container {
+        aspect-ratio: 1/1;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .img-container img {
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .desc {
+        padding: 20px
+    }
+
+    .tray {
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        gap: 5px
+    }
+
+    .tray h3 {
+        margin-right: auto;
+    }
+
+    .tray a img {
+        max-width: 30px;
+        filter: invert(0.2);
+        display: flex;
+    }
+
+    border-radius: 15px;
+    border: solid 1px #ddd;
+}
+
+.contact ul {
+    justify-content: space-evenly;
+    /* gap: 10px */
+}
+
+.projects ul {
+    flex-direction: column;
+    gap: 20px
+}
+
+.skills ul {
+    flex-direction: column;
+    gap: 10px
+}
+
+.social-link a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-link a img {
+    filter: invert(0.2);
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer > a > img {
+    filter: invert(1);
+}
+
