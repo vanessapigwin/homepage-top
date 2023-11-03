@@ -23,6 +23,10 @@
     src: url(../fonts/Agbalumo-Regular.ttf);
 }
 
+a {
+    color: var(--theme-black)
+}
+
 a:visited {
     color: var(--theme-teal)
 }
