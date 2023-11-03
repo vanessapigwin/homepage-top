@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Page - Vanessa Tan Cardoso</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
@@ -16,20 +14,22 @@
             <li>backend developer</li>
             <li>software engineer</li>
         </ul>
+        <span> </span>
     </header>
     <main>
         <section class="about">
             <h2>About Me</h2>
             <p>
                 Welcome stranger! I am a software developer from the Philippines.
-                The truth is I like things that don't really pop out. Even when I was
-                still an engineer, I specialized on foundations. Now, I like learning
-                about backend development. 
+                I like things that don't really stand out. When I was still an engineer, 
+                I specialized on foundations. Now that I have
+                shifted industries I would love to focus on backend development. 
             </p> 
             <p>
-                However, any good backend engineer knows that frontend matters. It's
+                However, any good backend engineer knows that frontend matters - a lot. It's
                 the building supported by the foundations and the one that occupants actually
-                interact with. That's why I'm here learning from The Odin Project.
+                interact with. That's why I'm currently learning from The Odin Project to
+                better understand the needs of frontend developers.
             </p>
         </section>
         <section class="projects">
@@ -49,6 +49,21 @@
                         </a>
                     </div>
                     <p class="desc">A blog that uses python (flask) to serve pre-made templates used for devops and CI/CD practice</p>
+                </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="../static/images/battleship.png" alt="battleship-screenshot">
+                    </div>
+                    <div class="tray">
+                        <h3>Battleship</h3>
+                        <a href="https://github.com/vanessapigwin/battleship-top" class="repo" aria-label="Repo Link">
+                            <img src="../static/images/link.svg" alt="link-icon">
+                        </a>
+                        <a href="https://vanessapigwin.github.io/battleship-top/" class="live" aria-label="Live Link">
+                            <img src="../static//images/code.svg" alt="code-icon">
+                        </a>
+                    </div>
+                    <p class="desc">Battleship game for The Odin Project Advanced JS project</p>
                 </div>
                 <div class="card">
                     <div class="img-container">
@@ -82,21 +97,6 @@
                 </div>
                 <div class="card">
                     <div class="img-container">
-                        <img src="../static/images/api.png" alt="django-api-screenshot">
-                    </div>
-                    <div class="tray">
-                        <h3>Resume API</h3>
-                        <a href="https://github.com/vanessapigwin/my_drf_resume" class="repo" aria-label="Repo Link">
-                            <img src="../static/images/link.svg" alt="link-icon">
-                        </a>
-                        <a href="https://resumeapi.cattoviz.com/api/" class="live" aria-label="Live Link">
-                            <img src="../static//images/code.svg" alt="code-icon">
-                        </a>
-                    </div>
-                    <p class="desc">Quick Django REST API, but just my resume on a self-hosted PostgreSQL</p>
-                </div>
-                <div class="card">
-                    <div class="img-container">
                         <img src="../static/images/restaurant.png" alt="restaurant-screenshot">
                     </div>
                     <div class="tray">
@@ -110,12 +110,27 @@
                     </div>
                     <p class="desc">Minecraft Steve's retirement restaurant page for The Odin Project</p>
                 </div>
+                <div class="card">
+                    <div class="img-container">
+                        <img src="../static/images/api.png" alt="django-api-screenshot">
+                    </div>
+                    <div class="tray">
+                        <h3>Resume API</h3>
+                        <a href="https://github.com/vanessapigwin/my_drf_resume" class="repo" aria-label="Repo Link">
+                            <img src="../static/images/link.svg" alt="link-icon">
+                        </a>
+                        <a href="https://resumeapi.cattoviz.com/api/" class="live" aria-label="Live Link">
+                            <img src="../static//images/code.svg" alt="code-icon">
+                        </a>
+                    </div>
+                    <p class="desc">Quick Django REST API, but just my resume on a self-hosted PostgreSQL</p>
+                </div>
             </ul>
         </section>
         <section class="skills">
             <h2>My Skills</h2>
             <ul>
-                <li>Web Development</li>
+                <li>Full Stack Web Development</li>
                 <li>Deployment and Testing</li>
                 <li>Data Engineering</li>
                 <li>Dashboard Development</li>
@@ -155,5 +170,6 @@
             <img src="../static/images/github.svg" alt="gh-icon">
         </a>
     </footer>
+    <script src="../static/js/index.js"></script>
 </body>
 </html>

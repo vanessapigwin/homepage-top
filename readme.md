@@ -5,4 +5,7 @@ Result: https://vanessapigwin.github.io/homepage-top
 
 Goals:
 - [x] Setup with dummy content
-- [ ] Finish page css
+- [x] Finish page css
+
+New Learning:
+- Intersection Observer API

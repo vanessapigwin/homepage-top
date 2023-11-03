@@ -1,7 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: solid 1px red; */
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
 }
 
 :root {
@@ -11,8 +13,14 @@
     --theme-red: #C52233;
 }
 
-a {
-    text-decoration: none;
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Agbalumo';
+    src: url(../fonts/Agbalumo-Regular.ttf);
 }
 
 a:visited {
@@ -22,7 +30,8 @@ a:visited {
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+    font-family:'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
     color: #333333
 }
 
@@ -33,10 +42,20 @@ header {
     text-align: center;
 }
 
-header ul {
+header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 20px 0 40px 0;
+    gap: 20px
+}
+
+header ul {
+    justify-content: space-between;
     gap: 20px;
-    padding: 20px 20px;
+    padding-top: 20px;
 }
 
 h1 {
@@ -73,7 +92,6 @@ section {
 }
 
 ul {
-    list-style-type: none;
     display: flex;
 }
 
@@ -126,7 +144,7 @@ a > img {
 
 .contact ul {
     justify-content: space-evenly;
-    /* gap: 10px */
+    padding: 20px;
 }
 
 .projects ul {
@@ -161,3 +179,66 @@ footer > a > img {
     filter: invert(1);
 }
 
+@media screen and (min-width:700px) and (max-width: 1080px) {
+    header {
+        min-height: 30%;
+    }
+    
+    .projects {
+        max-width: 600px;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width:1080px) {
+    header {
+        min-height: 30%;
+    }
+
+    main {
+        max-width: 1080px;
+        align-self: center;
+    }
+
+    .projects ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+header span {
+    content: " ";
+    width: 70%;
+    max-width: 350px;
+    height: 3px;
+    background-color: var(--theme-teal);
+    animation: underline 2s
+}
+
+/* animations */
+
+@keyframes underline {
+    0% {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes cardanimation {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .img-animation {
+      animation: cardanimation 1s 1;
+    }
+  }
